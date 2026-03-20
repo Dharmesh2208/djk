@@ -3,9 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Best Loan & Car Accessories in Halvad | Krutarth Associates</title>
-
+<title>Krutarth Associates</title>
 <meta name="description" content="Krutarth Associates provides loan, insurance, car accessories and tyre services in Halvad. Contact for best deals.">
 <meta name="keywords" content="loan Halvad, car accessories Halvad, insurance Halvad, Krutarth Associates">
 <meta name="robots" content="index, follow">
@@ -36,7 +34,6 @@
     border:none;
     margin:2px;
     border-radius:5px;
-    cursor:pointer;
 }
 
 /* BUTTONS */
@@ -53,35 +50,19 @@
 
 /* SLIDER */
 .slider{height:300px;overflow:hidden}
-.slides{
-    display:flex;
-    width:500%;
-    animation:slide 20s infinite;
-}
-.slides img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-}
-
-/* FIXED ANIMATION FOR 5 IMAGES */
+.slides{display:flex;width:400%;animation:slide 16s infinite}
+.slides img{width:100%;height:300px;object-fit:cover}
 @keyframes slide{
 0%{margin-left:0}
-20%{margin-left:0}
 25%{margin-left:-100%}
-40%{margin-left:-100%}
-45%{margin-left:-200%}
-60%{margin-left:-200%}
-65%{margin-left:-300%}
-80%{margin-left:-300%}
-85%{margin-left:-400%}
-100%{margin-left:-400%}
+50%{margin-left:-200%}
+75%{margin-left:-300%}
 }
 
 /* SECTION */
 .section{padding:40px 20px}
 .card{
-    background:rgba(255,255,255,0.9);
+    background:rgba(255,255,255,0.85);
     backdrop-filter:blur(10px);
     padding:25px;
     border-radius:15px;
@@ -94,7 +75,7 @@
 
 h2{color:#2d2f8f;margin-bottom:10px}
 
-/* BRANDS */
+/* ULTRA BRAND SECTION */
 .brand-section{text-align:center}
 .brand-slider{overflow:hidden;margin-top:20px}
 .brand-track{
@@ -104,6 +85,7 @@ h2{color:#2d2f8f;margin-bottom:10px}
 }
 .brand-track span{
     background:rgba(255,255,255,0.3);
+    backdrop-filter:blur(10px);
     padding:12px 20px;
     border-radius:25px;
     white-space:nowrap;
@@ -134,7 +116,6 @@ button{
     border:none;
     width:100%;
     border-radius:8px;
-    cursor:pointer;
 }
 
 /* MAP */
@@ -144,7 +125,7 @@ iframe{
     border-radius:10px;
 }
 
-/* FLOAT */
+/* FLOAT BUTTONS */
 .float{
     position:fixed;
     right:20px;
@@ -177,30 +158,30 @@ iframe{
 
 <div class="top-btns">
 <a href="tel:9106991314">📞 Call Now</a>
-<a href="https://maps.google.com/?q=Krutarth Car Accessories Halvad" target="_blank">📍 Direction</a>
+<a href="https://maps.google.com/?q=Krutarth Car Accessories" target="_blank">📍 Direction</a>
 </div>
 </div>
 
 <!-- SLIDER -->
 <div class="slider">
 <div class="slides">
-<img src="poster1.jpeg" alt="Car accessories Halvad">
-<img src="poster2.jpeg" alt="Loan service Halvad">
-<img src="poster3.png" alt="Insurance service Halvad">
-<img src="poster4.jpeg" alt="Tyre service Halvad">
-<img src="poster5.jpeg" alt="Krutarth Associates">
+<img src="poster1.jpeg">
+<img src="poster2.jpeg">
+<img src="poster3.png">
+<img src="poster4.jpeg">
+<img src="poster5.jpeg">
 </div>
 </div>
 
 <!-- SERVICES -->
 <div class="section">
 <div class="card">
-<h2>📄 Loan & Insurance in Halvad</h2>
-<p>We provide all types of bank loans, car insurance, bike insurance, commercial vehicle insurance and vehicle finance services in Halvad.</p>
+<h2>📄 Loan & Insurance</h2>
+<p>All bank loans, car insurance, bike insurance, commercial vehicle insurance, new & old vehicle finance available.</p>
 </div>
 </div>
 
-<!-- BRANDS -->
+<!-- ULTRA BRANDS -->
 <div class="section">
 <div class="card brand-section">
 <h2>🚗 Brands We Deal With</h2>
@@ -247,9 +228,9 @@ iframe{
 </div>
 </div>
 
-<!-- FLOAT -->
+<!-- FLOAT BUTTONS -->
 <div class="float">
-<a class="whatsapp" href="https://wa.me/918153958278">💬</a>
+<a class="whatsapp" href="https://wa.me/919106991314">💬</a>
 <a class="call" href="tel:9106991314">📞</a>
 </div>
 
@@ -260,12 +241,8 @@ let name=document.getElementById("name").value;
 let phone=document.getElementById("phone").value;
 let msg=document.getElementById("msg").value;
 
-let text = "Hello, I want loan details.%0a%0a"
-+"Name: "+name+"%0a"
-+"Phone: "+phone+"%0a"
-+"Requirement: "+msg;
-
-let url="https://wa.me/919106991314?text="+text;
+let url="https://wa.me/8153958278?text="
++"Name: "+name+"%0aPhone: "+phone+"%0aMsg: "+msg;
 
 window.open(url,'_blank');
 }
